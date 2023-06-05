@@ -1,4 +1,4 @@
-# Tubes Kelompok 8 PBO
+# UAS Kelompok 8 PBO
 1. Fadlan Dwi Febrio (G1A022051)
 2. Rino Alfaridzi Hutomo (G1A022085)
 3. Fanni Ghina Athiyyah (G1A022087)
