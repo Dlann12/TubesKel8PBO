@@ -10,3 +10,6 @@ OOP diterapkan pada pemrograman tersebut.
 2. Notepad menggunakan Tkinter dengan Python: Tkinter adalah paket GUI dari python. Kita
 dapat membuat notepad sederhana yang terdiri dari berbagai menu seperti cara menyimpan,
 membuka, dan mengedit file.
+
+# Source Code
+- Lihat <a href="hhttps://github.com/Dlann12/TubesKel8PBO/edit/main/TUBES.py">Kode .</a><br><br>
