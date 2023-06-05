@@ -12,4 +12,4 @@ dapat membuat notepad sederhana yang terdiri dari berbagai menu seperti cara men
 membuka, dan mengedit file.
 
 # Source Code
-- Lihat <a href=hhttps://github.com/Dlann12/TubesKel8PBO/blob/main/TUBES.py>Kode.</a><br><br>
+- Lihat <a href=https://github.com/Dlann12/TugasPbo1/blob/main/oop.py>Object oriented programming.</a><br><br>
