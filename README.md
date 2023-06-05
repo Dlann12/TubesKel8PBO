@@ -13,3 +13,4 @@ membuka, dan mengedit file.
 
 # Source Code dan Penjelasan
 - Lihat <a href=https://github.com/Dlann12/TubesKel8PBO/blob/main/TUBES.py>Kode GUI Tkinter NotePad.</a><br><br>
+Dari kode diaatas saya akan mnejelaskan kode tersebut yang mana pada uas
