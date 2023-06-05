@@ -3,21 +3,21 @@ from tkinter import messagebox, filedialog
 
 root = tk.Tk()  # membuat tampilan awal
 
-root.title("NotePad")
-root.rowconfigure(0, weight=1)
-root.columnconfigure(0, weight=1)
-root.geometry("1000x600")
+root.title("NotePad")  # Membuat judul GUI
+root.rowconfigure(0, weight=1)  # Mengatur Tata Letak baris
+root.columnconfigure(0, weight=1)  # Mengatur tata letak kolom
+root.geometry("1000x600")  # Ukuran Gui
 
 current_file = None
 
 
-def new_file():
+def new_file():  # Function Membuat file baru
     global current_file
     current_file = None
     text.delete(1.0, tk.END)
 
 
-def open_file():
+def open_file():  # function membuka file
     global current_file
     file_path = filedialog.askopenfilename(
         filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")]
@@ -29,9 +29,9 @@ def open_file():
             text.insert(tk.END, file.read())
 
 
-def save_file():
+def save_file():  # function menyimpan file
     global current_file
-    if current_file:
+    if current_file:  # messagebox ketika berhasil disimopan
         with open(current_file, "w") as file:
             file.write(text.get(1.0, tk.END))
         messagebox.showinfo("Simpan", "File berhasil disimpan.")
@@ -39,31 +39,35 @@ def save_file():
         save_file_as()
 
 
-def save_file_as():
+def save_file_as():  # function menyimopan file sebaqgai
     global current_file
     file_path = filedialog.asksaveasfilename(
         defaultextension=".txt",
         filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")],
     )
-    if file_path:
+    if file_path:  # messagebox ketika berhasil disimopan
         current_file = file_path
         with open(file_path, "w") as file:
             file.write(text.get(1.0, tk.END))
         messagebox.showinfo("Simpan", "File berhasil disimpan.")
 
 
+# Function menghapus
 def cut():
     text.event_generate("<<Cut>>")
 
 
+# function menyalin
 def copy():
     text.event_generate("<<Copy>>")
 
 
+# function menempel
 def paste():
     text.event_generate("<<Paste>>")
 
 
+# mesagebox ketika akan exit
 def confirm_exit():
     if messagebox.askyesno("Keluar", "Apakah Anda ingin keluar?"):
         if current_file:
@@ -96,7 +100,7 @@ edit_menu.add_command(label="Tempel", command=paste)
 text = tk.Text(root)
 text.pack(fill=tk.BOTH, expand=True)
 
-# Mengatur latar belakang dengan warna solid
+# Mengatur latar belakang dengan warna
 text.configure(background="lightgray")
 
 root.protocol("WM_DELETE_WINDOW", confirm_exit)
