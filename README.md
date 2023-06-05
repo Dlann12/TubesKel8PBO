@@ -11,5 +11,5 @@ OOP diterapkan pada pemrograman tersebut.
 dapat membuat notepad sederhana yang terdiri dari berbagai menu seperti cara menyimpan,
 membuka, dan mengedit file.
 
-# Source Code
+# Source Code dan Penjelasan
 - Lihat <a href=https://github.com/Dlann12/TubesKel8PBO/blob/main/TUBES.py>Kode GUI Tkinter NotePad.</a><br><br>
